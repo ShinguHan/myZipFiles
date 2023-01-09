@@ -14,10 +14,16 @@ def zipFiles(path):
     site = split[-1]
     
     day = split[-2][:-1]
+    if len(day) == 1:
+        day = '0' + day
+        
     month = split[-3][:-1]
+    if len(month) == 1:
+        month = '0' + month
+        
     year = split[-4][:-1]
     
-    date_time_str = year + month + day
+    date_time_str = '20' + year + month + day
     
 
 
